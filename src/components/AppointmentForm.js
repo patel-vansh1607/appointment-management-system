@@ -10,10 +10,25 @@ const AppointmentForm = ({ addAppointment }) => {
         setName("");
         setDate("");
     }
-
     return(
-        <div>
-            <h1> hi</h1>
+        <div className="container">
+           <form onSubmit={handleSubmit}>
+                <div className="row">
+                    <div className="col-25">
+                        <label for="fname">Full Name</label>
+                    </div>
+                    <div className="col-75">
+                    <input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Your name.."
+							value={name}
+							onChange={(e) => setName(e.target.value)}
+						/>
+                    </div>
+                </div>
+           </form>
         </div>
     )
 }
