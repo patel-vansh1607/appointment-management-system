@@ -24,10 +24,23 @@ const AppointmentForm = ({ addAppointment }) => {
 							name="firstname"
 							placeholder="Your name.."
 							value={name}
-							onChange={(e) => setName(e.target.value)}
-						/>
+							onChange={(e) => setName(e.target.value)}/>
                     </div>
                 </div>
+                <div class="row">
+					<div class="col-25">
+						<label for="fname">Appointment Date: </label>
+					</div>
+					<div class="col-75">
+						<input
+							id="fname"
+							name="firstname"
+							placeholder="Your name.."
+							type="date"
+							value={date}
+							onChange={(e) => setDate(e.target.value)}
+						/>
+					</div>
            </form>
         </div>
     )
