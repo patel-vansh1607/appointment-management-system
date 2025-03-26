@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import "./App.css";
-import AppointmentForm from "./Components/AppointmentForm";
-import AppointmentList from "./Components/AppointmentList";
+import AppointmentForm from "./components/AppointmentForm";
+import AppointmentList from "./components/AppointmentList";
 
 const App = () => {
 	const [appointments, setAppointments] = useState([]);
